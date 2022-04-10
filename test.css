@@ -1,0 +1,493 @@
+body {
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word; word-break:break-all;
+    /* font-family: 'Cairo'; */
+    font-family: 'Exo', sans-serif;
+}
+ul {
+    list-style: none;
+}
+header {
+    height: 80px;
+    font-size: 0;
+}
+main {
+    font-size: 0;
+    /* height: 600px; */
+}
+.helper {
+    display: inline-block;
+    height: 7px;
+    width: 100%;
+    vertical-align: middle;
+}
+footer {
+    font-size: 0;
+}
+
+/* header */
+.header {
+    font-size: 1rem;
+    float: left;
+}
+.header-left {
+    width: 30%;
+    height: 100%;
+}
+.header-left-logo {
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 220px;
+    height: 80px;
+}
+.header-left-logo img {
+    width: 100%;
+    height: 80%;
+}
+.header-right {
+    width: 70%;
+    height: 100%;
+    text-align: right;
+}
+.navbar {
+    font-family: 'Cairo';
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+.navbar li {
+    padding-left: 20px;
+    /* navbar 오른쪽 메뉴들을 가로 정렬 시켜줌, inline-block으로 하면 지구본 모양을 hover시켰을때 자리가 바뀜 */
+    float: left; 
+    list-style: none; 
+    /*이걸해야 지구본에 마우스 올렸을 때 글자들이 제대로 나옴*/
+    position: relative;
+}
+.fa-globe {
+    font-size: 1.5rem;
+    background-color: white;
+    margin-top: 7px;
+    /* 지구본이 가운데정렬 */
+    text-align: center;
+    /* 지구본이 차지하는 너비 */
+    width: 67px;
+}
+.navbar li i ul {
+    /* margin-left: -5px; */
+    margin-top: -2px;
+    display: none;
+}
+.navbar li i ul li a {
+    font-size: 12px;
+    color: rgb(30, 60, 43);
+    font-weight: bold;
+    margin-left: -11px;
+    width: 100%;
+}
+.navbar li:hover .language {
+    padding: 0;
+    display: block;
+}
+.navbar li a {
+    color: rgb(30, 60, 43);
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbar li a:hover {
+    text-decoration: underline;
+}
+.navbar li a i:hover {
+    text-decoration: underline;
+}
+.navbar-menu {
+    margin-top: 30px;
+    margin-left: -10px;
+    padding: 0 20px;
+    display: none;
+}
+.navbar-menu li {
+    list-style: none;
+}
+.fa-bars {
+    font-size: 3.52222rem;
+    color:white; 
+    background-color:  rgb(30, 60, 43); 
+    border: 3px solid  rgb(30, 60, 43);
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+    background-color: rgb(30, 60, 43);
+}
+.hidden-navbar {
+    text-align: center;
+}
+.hidden-navbar li {
+    padding-left: 50px;
+    font-weight: 500;
+    display: inline-block;
+}
+.hidden-navbar li a {
+    color: #fff;
+    text-decoration: none;
+}
+.hidden-navbar li a:hover {
+    text-decoration: underline;
+}
+
+/* MANUFACTURE글자 & 녹색바탕 있는 부분 */
+.main-title {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(30, 60, 43);
+    display: table;
+}
+.main-title-letter {
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: left;
+    font-size: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30px;
+}
+/* 사진들 있는 부분 */
+.main {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* 사진 가운데 정렬 */
+    text-align: center;
+}
+.frame {
+    width: inherit;
+    height: inherit;
+}
+.img-wrapper {
+    margin: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    padding: 0 10px 50px 10px;
+}
+.main1 {
+    padding-top: 80px;
+}
+.main4 {
+    padding-bottom: 30px;
+} 
+.img-wrapper img {
+    width: inherit;
+    height: inherit;
+    transition: all 0.5s linear;
+}
+.letter {
+    font-size:1.3em;
+    color:black;
+    user-select:none;
+    opacity: 1;
+    position: absolute;
+    margin-left: 100px;
+}
+.img-wrapper:hover img {
+    transform: scale(1.3);
+}
+.img-wrapper:hover .letter {
+    transform: scale(1);
+    color: black;
+    font-size: 2.5em;
+    margin-top: -5px;
+    margin-left: 60px;
+}
+
+/* 공장 전체 사진 있는 부분 */
+.main_bottom {
+    display: inline-block;
+    width: 100%;
+    height: 550px;
+}
+.main_bottom img {
+    width: 100%;
+    height: 100%;
+}
+
+.main_bottom_left {
+    width: 70%;
+    height: 100%;
+    height: inherit;
+    float: left;
+}
+.main_bottom_right {
+    width: 30%;
+    height: 100%;
+    height: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgb(30, 60, 43);
+}
+.main_bottom_right_outside span {
+    color: white;
+    font-size: 2rem;
+}
+.main_bottom_right_outside {
+    margin: 50px;
+}
+
+
+/* footer */
+.footer {
+    float: left;
+}
+.footer-top {
+    width: 100%;
+    height: 400px;
+}
+.footer-top-left {
+    width: 40%;
+    height: 100%;
+    background-color: rgb(30, 60, 43);
+}
+.footer-top-left-contactus {
+    line-height: 44px;
+    text-align: center;
+    color: white;
+}
+/*이게 있어야 안에 글자들이 좌우 스크롤 했을때 그대로 왔다 갔다가 함*/
+.container-contact-A {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 33px;
+}
+.container-contact-B {
+    margin-top: 20px;
+}
+.footer-top-left li {
+    list-style: none;
+}
+.footer-top-left li a {
+    color: white;
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+.footer-top-left li a:hover {
+    text-decoration: underline;
+}
+.footer-top-right {
+    width: 60%;
+    height: 100%;
+}
+.footer-top-right-map {
+    width: 100%;
+    height: 100%;
+}
+.footer-bottom {
+    height: 60px;
+    width: 100%;
+    border-top: #fff solid 20px;
+    /* background-color: rgb(30, 60, 43); */
+}
+.footer-bottom-left {
+    width: 35%;
+    height: 100%;
+    background-color: rgb(30, 60, 43);
+}
+/*맨 밑에 Paxtek 로고 둘 자리확보*/
+.footer-bottom-left-logo {
+    margin-left: 28px;
+    margin-top: 5px;
+    width: 150px;
+    height: 50px;
+}
+.footer-bottom-left-logo img {
+    width: 100%;
+    height: 100%;
+}
+.footer-bottom-right {
+    width: 65%;
+    height: 100%;
+    text-align: right;
+    display: table;
+    background-color: rgb(30, 60, 43);
+}
+.footer-bottom-right-word {
+    margin: 0;
+    padding: 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.footer-bottom-right-word li {
+    padding-left: 20px;
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    font-size: 0.88889rem;
+}
+.footer-bottom-right-word li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        padding: 0 10px;
+    }
+}
+
+/* 테블릿 사이즈 */
+@media (max-width: 1023px) {
+    .header-left{
+        width: 25%;
+    }
+    .header-right{
+        width: 75%;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar-menu {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .hidden-navbar li {
+        height: 100%;
+        padding: 0 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .main1 {
+        height: 600px;
+        height: 100%;
+    }
+    .main2 {
+        height: 450px;
+        height: 100%;
+    }
+    .main1-left, .main1-right, .main2-left, .main2-right {
+        width: 100%;
+    }
+    .helper {
+        display: inline-block;
+        height: 7px;
+        width: 100%;
+        vertical-align: middle;
+    }
+    .footer-top {
+        height: 300px;
+    }
+    .footer-top-left, .footer-top-right {
+        width: 100%;
+    }
+    .footer-top-left-container {
+        margin: 0;
+    }
+    .footer-top-left-contactus {
+        width: 100%;
+        text-align: center;
+    }
+    .container-contact-A, .container-contact-B {
+        width: 50%;
+        margin-top: 80px;
+        float: left;
+    }
+    .container-contact-A h3 {
+        display: inline-block;
+        width: 240px;
+        font-size: 2.0rem;
+    }
+    .container-contact-B li a {
+        font-size: 1.7rem;
+    }
+}
+
+/* 휴대폰 사이즈 */
+@media (max-width: 590px) {
+    header {
+        height: 60px;
+    }
+    .header-left {
+        width: 60%;
+    }
+    .header-right {
+        width: 40%;
+    }
+    .header-left-logo {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .header-left-logo img {
+        width: 70%;
+        height: 50%;
+    }
+    .navbar-menu {
+        margin-top: 10px;
+    }
+    .hidden-navbar li {
+        height: 100%;
+        padding: 0 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    .fa-bars {
+        font-size: 2.22222rem;
+    }
+    .main1, .main2 {
+        width: 100%;
+        height: 100%;
+    }
+    .main1-left {
+        padding-top: 20px;
+    }
+    .main1-left img {
+        width: 90%;
+        height: 120%;
+    }
+    .helper {
+        display: inline-block;
+        height: 7px;
+        width: 100%;
+        vertical-align: middle;
+    }
+    .footer-top {
+        height: 170px;
+    }
+    .footer-top-left-container {
+        margin: 0;
+        margin-top: 0;
+    }
+    .footer-top-left-contactus {
+        width: 100%;
+        text-align: center;
+        margin-top: -60px;
+    }
+    .container-contact-A, .container-contact-B {
+        width: 50%;
+        margin-top: 15x;
+        float: left;
+    }
+    /* Want to know ~~ 글자 있는 박스 부분*/
+    .container-contact-A h3 {
+        display: inline-block;
+        font-size: 15px;
+        width: 125px;
+    }
+    .container-contact-B li a {
+        font-size: 1.0rem;
+    }
+    .footer-bottom {
+        height: 40px;
+    }
+    .footer-bottom-left-logo {
+        margin-left: 5px;
+        margin-top: 5px;
+        width: 100px;
+        height: 30px;
+    }
+}
+

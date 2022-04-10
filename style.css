@@ -1,0 +1,539 @@
+body {
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word; word-break:break-all;
+    /* font-family: 'Cairo'; */
+    font-family: 'Exo', sans-serif;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    height: 80px;
+    font-size: 0;
+}
+
+main {
+    font-size: 0;
+    /* height: 600px; */
+}
+
+footer {
+    font-size: 0;
+}
+
+/* header */
+.header {
+    font-size: 1rem;
+    float: left;
+}
+.header-left {
+    width: 30%;
+    height: 100%;
+}
+.header-left-logo {
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 220px;
+    height: 80px;
+}
+.header-left-logo img {
+    width: 100%;
+    height: 80%;
+}
+.header-right {
+    width: 70%;
+    height: 100%;
+    text-align: right;
+}
+.navbar {
+    font-family: 'Cairo';
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+.navbar li {
+    padding-left: 20px;
+    /* navbar 오른쪽 메뉴들을 가로 정렬 시켜줌, inline-block으로 하면 지구본 모양을 hover시켰을때 자리가 바뀜 */
+    float: left; 
+    list-style: none; 
+    /*이걸해야 지구본에 마우스 올렸을 때 글자들이 제대로 나옴*/
+    position: relative;
+}
+.fa-globe {
+    font-size: 1.5rem;
+    background-color: white;
+    margin-top: 7px;
+    /* 지구본이 가운데정렬 */
+    text-align: center;
+    /* 지구본이 차지하는 너비 */
+    width: 67px;
+}
+.navbar li i ul {
+    /* margin-left: -5px; */
+    margin-top: -2px;
+    display: none;
+}
+.navbar li i ul li a {
+    font-size: 12px;
+    color: rgb(30, 60, 43);
+    font-weight: bold;
+    margin-left: -11px;
+    width: 100%;
+}
+.navbar li:hover .language {
+    padding: 0;
+    display: block;
+}
+.navbar li a {
+    color: rgb(30, 60, 43);
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+.navbar li a:hover {
+    text-decoration: underline;
+}
+.navbar li a i:hover {
+    text-decoration: underline;
+}
+.navbar-menu {
+    margin-top: 30px;
+    margin-left: -10px;
+    padding: 0 20px;
+    display: none;
+}
+.navbar-menu li {
+    list-style: none;
+}
+.fa-bars {
+    font-size: 3.52222rem;
+    color:white; 
+    background-color:  rgb(30, 60, 43); 
+    border: 3px solid  rgb(30, 60, 43);
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+    background-color: rgb(30, 60, 43);
+}
+.hidden-navbar {
+    text-align: center;
+}
+.hidden-navbar li {
+    padding-left: 50px;
+    font-weight: 500;
+    display: inline-block;
+}
+.hidden-navbar li a {
+    color: #fff;
+    text-decoration: none;
+}
+.hidden-navbar li a:hover {
+    text-decoration: underline;
+}
+
+/* main1 */
+.main {
+    font-size: 1rem;
+    float: left;
+}
+.main1 {
+    height: 600px;
+}
+.main1-left {
+    width: 40%;
+    height: 100%;
+    background-color:  rgb(232, 232, 232);
+}
+.main1-left img {
+    width: 90%;
+    height: 97%;
+    margin-left: 7%;
+}
+.main1-right {
+    width: 60%;
+    height: 100%;
+    background-color:  rgb(232, 232, 232);
+}
+.main1-right-word {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+.main1-right-word-top {
+    display: inline-block;
+    width: 80%;
+    margin-top: 40px;
+    color: rgb(30, 60, 43);
+    line-height: 50px;
+}
+.main1-right-word-top h3 {
+    font-size: 50px;
+}
+.main1-right-word-top span {
+    font-size: 100px;
+}
+.main1-right-word-bottom {
+    display: inline-block;
+    width: 80%;
+    color: rgb(30, 60, 43);
+}
+.main1-right-word-bottom p {
+    display: inline-block;
+    width: 500px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    line-height: 60px;
+}
+.main1-right-word li {
+    font-size: 50px;
+    color: rgb(30, 60, 43);
+}
+
+/* main2 */
+.main2 {
+    height: 600px;
+    /* border-top: #fff solid 40px; */
+}
+.main2-left {
+    width: 40%;
+    height: 100%;
+    /* #6667AB */
+    background-color:  rgb(30, 60, 43);
+    text-align: center;
+    display: table;
+}
+.main2-left-word {
+    display: table-cell;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 60px;
+    color: white;
+    vertical-align: middle;
+}
+.main2-right {
+    width: 60%;
+    height: 100%;
+    background-color:  rgb(232, 232, 232);
+}
+.main2-right img {
+    width: 100%;
+    height: 100%;
+}
+
+/* main3 */
+.main3 {
+    height: 550px;
+    /* border-top: #fff solid 40px; */
+}
+.main3-left {
+    width: 60%;
+    height: 100%;
+}
+.main3-left img {
+    width: 100%;
+    height: 100%;
+}
+.main3-right {
+    display: table;
+    width: 40%;
+    height: 100%;
+    background-color:  rgb(30, 60, 43);
+    text-align: center;
+}
+.main3-right-word {
+    display: table-cell;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+/* footer */
+.footer {
+    float: left;
+}
+.footer-top {
+    width: 100%;
+    height: 400px;
+}
+.footer-top-left {
+    width: 40%;
+    height: 100%;
+    background-color: rgb(30, 60, 43);
+}
+.footer-top-left-contactus {
+    line-height: 44px;
+    text-align: center;
+    color: white;
+}
+/*이게 있어야 안에 글자들이 좌우 스크롤 했을때 그대로 왔다 갔다가 함*/
+.container-contact-A {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 33px;
+}
+.container-contact-B {
+    margin-top: 20px;
+}
+.footer-top-left li {
+    list-style: none;
+}
+.footer-top-left li a {
+    color: white;
+    font-weight: 500;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+.footer-top-left li a:hover {
+    text-decoration: underline;
+}
+.footer-top-right {
+    width: 60%;
+    height: 100%;
+}
+.footer-top-right-map {
+    width: 100%;
+    height: 100%;
+}
+.footer-bottom {
+    height: 60px;
+    width: 100%;
+    border-top: #fff solid 20px;
+    /* background-color: rgb(30, 60, 43); */
+}
+.footer-bottom-left {
+    width: 35%;
+    height: 100%;
+    background-color: rgb(30, 60, 43);
+}
+/*맨 밑에 Paxtek 로고 둘 자리확보*/
+.footer-bottom-left-logo {
+    margin-left: 28px;
+    margin-top: 5px;
+    width: 150px;
+    height: 50px;
+}
+.footer-bottom-left-logo img {
+    width: 100%;
+    height: 100%;
+}
+.footer-bottom-right {
+    width: 65%;
+    height: 100%;
+    text-align: right;
+    display: table;
+    background-color: rgb(30, 60, 43);
+}
+.footer-bottom-right-word {
+    margin: 0;
+    padding: 0 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.footer-bottom-right-word li {
+    padding-left: 20px;
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    font-size: 0.88889rem;
+}
+.footer-bottom-right-word li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        padding: 0 10px;
+    }
+}
+
+/* 테블릿 사이즈 */
+@media (max-width: 1023px) {
+    .header-left{
+        width: 25%;
+    }
+    .header-right{
+        width: 75%;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar-menu {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .hidden-navbar li {
+        height: 100%;
+        padding: 0 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .main1 {
+        height: 600px;
+    }
+    .main2, .main3 {
+        height: 450px;
+    }
+    .main1-left, .main1-right, .main2-left, .main2-right, .main3-left, .main3-right {
+        width: 100%;
+    }
+    .main1-right-word-bottom p {
+        line-height: 60px;
+    }
+
+    .main2-left-word {
+        font-size: 50px;
+    }
+    .footer-top {
+        height: 300px;
+    }
+    .footer-top-left, .footer-top-right {
+        width: 100%;
+    }
+    .footer-top-left-container {
+        margin: 0;
+    }
+    .footer-top-left-contactus {
+        width: 100%;
+        text-align: center;
+    }
+    .container-contact-A, .container-contact-B {
+        width: 50%;
+        /* margin-top: 80px; */
+        float: left;
+    }
+    .container-contact-A h3 {
+        display: inline-block;
+        width: 240px;
+        font-size: 2.0rem;
+    }
+    .container-contact-B li a {
+        font-size: 1.7rem;
+    }
+}
+
+/* 휴대폰 사이즈 */
+@media (max-width: 700px) {
+    header {
+        height: 60px;
+    }
+    .header-left {
+        width: 60%;
+    }
+    .header-right {
+        width: 40%;
+    }
+    .header-left-logo {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .header-left-logo img {
+        width: 70%;
+        height: 50%;
+    }
+    .navbar-menu {
+        margin-top: 10px;
+    }
+    .hidden-navbar li {
+        height: 100%;
+        padding: 0 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    .fa-bars {
+        font-size: 2.22222rem;
+    }
+    .main1, .main2, .main3 {
+        height: 300px;
+    }
+    .main1-left {
+        padding-top: 20px;
+    }
+    .main1-left img {
+        width: 90%;
+        height: 100%;
+    }
+    .main1-right-word-top {
+        width: 95%;
+        margin-top: 10px;
+        line-height: 30px;
+    }
+    .main1-right-word-top h3 {
+        font-size: 35px;
+    }
+    .main1-right-word-top span {
+        font-size: 60px;
+    }
+    .main1-right-word-bottom p {
+        font-size: 20px;
+        width: 240px;
+        padding: 0 10px;
+        line-height: 30px;
+    }
+    .main2-left-word, .main3-right-word {
+        font-size: 20px;
+        line-height: 250%;
+    }
+    .main3-left img {
+        height: 80%;
+    }
+    .footer-top {
+        height: 170px;
+    }
+    .footer-top-left-contactus {
+        width: 100%;
+        text-align: center;
+        /* margin-top: -60px; */
+    }
+    .container-contact-A, .container-contact-B {
+        display: table;
+    }
+    .container-contact-A {
+        width: 40%;
+        display: table-cell;
+        background-color: pink;
+        vertical-align: middle;
+        vertical-align: middle;
+        display: table-cell;
+        line-height: 200%;
+        font-size: 15px;
+    }
+    .container-contact-B {
+        width: 60%;
+        background-color: blue;
+    }
+
+    .container-contact-B li a {
+        font-size: 1.0rem;
+    }
+    .footer-bottom {
+        height: 40px;
+    }
+    .footer-bottom-left-logo {
+        margin-left: 5px;
+        margin-top: 5px;
+        width: 100px;
+        height: 30px;
+    }
+    .footer-bottom-right-word li {
+        font-size: 10px;
+    }
+}
+
