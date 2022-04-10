@@ -363,6 +363,7 @@ footer {
 }
 
 /* 테블릿 사이즈 */
+
 @media (max-width: 1023px) {
     .header-left{
         width: 25%;
@@ -415,7 +416,6 @@ footer {
     }
     .container-contact-A, .container-contact-B {
         width: 50%;
-        /* margin-top: 80px; */
         float: left;
     }
     .container-contact-A h3 {
@@ -429,6 +429,7 @@ footer {
 }
 
 /* 휴대폰 사이즈 */
+
 @media (max-width: 700px) {
     header {
         height: 60px;
@@ -500,7 +501,6 @@ footer {
     .footer-top-left-contactus {
         width: 100%;
         text-align: center;
-        /* margin-top: -60px; */
     }
     .container-contact-A, .container-contact-B {
         display: table;
@@ -508,7 +508,6 @@ footer {
     .container-contact-A {
         width: 40%;
         display: table-cell;
-        background-color: pink;
         vertical-align: middle;
         vertical-align: middle;
         display: table-cell;
@@ -517,7 +516,6 @@ footer {
     }
     .container-contact-B {
         width: 60%;
-        background-color: blue;
     }
 
     .container-contact-B li a {

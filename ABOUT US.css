@@ -135,13 +135,13 @@ footer {
 }
 
 /* main1 */
-.main1-title {
+.main-title {
     width: 100%;
     height: 60px;
     background-color: rgb(30, 60, 43);
     display: table;
 }
-.aboutus {
+.main-title-letter {
     width: 100%;
     height: 40px;
     color: white;
@@ -348,6 +348,12 @@ footer {
         margin-top: 20px;
         margin-bottom: 20px;
         font-size: 20px;
+    }
+    .main-title {
+        height: 50px;
+    }
+    .main-title-letter {
+        font-size: 30px;
     }
     .main1 {
         height: 600px;
