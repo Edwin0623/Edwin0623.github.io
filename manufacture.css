@@ -17,7 +17,7 @@ main {
     /* height: 600px; */
 }
 .helper {
-    display: inline-block;
+    /* display: inline-block; */
     height: 7px;
     width: 100%;
     vertical-align: middle;
@@ -140,31 +140,30 @@ footer {
 /* MANUFACTURE글자 & 녹색바탕 있는 부분 */
 .main-title {
     width: 100%;
-    height: 60px;
+    height: 35px;
     background-color: rgb(30, 60, 43);
-    display: table;
 }
 .main-title-letter {
     width: 100%;
     height: 40px;
     color: white;
     text-align: left;
-    font-size: 30px;
-    display: table-cell;
+    font-size: 25px;
     vertical-align: middle;
-    padding-left: 30px;
+    text-indent: 23px;
 }
 /* 사진들 있는 부분 */
 .main {
     overflow: hidden;
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
     /* 사진 가운데 정렬 */
     text-align: center;
 }
 .frame {
-    width: inherit;
-    height: inherit;
+    /* width: inherit; */
+    /* height: inherit; */
+    padding: 40px 12%;
 }
 .img-wrapper {
     margin: 30px;
@@ -173,14 +172,8 @@ footer {
     width: 300px;
     height: 400px;
     display: inline-block;
-    padding: 0 10px 50px 10px;
+    padding: 0 10px 10px 10px;
 }
-.main1 {
-    padding-top: 80px;
-}
-.main4 {
-    padding-bottom: 30px;
-} 
 .img-wrapper img {
     width: inherit;
     height: inherit;
@@ -215,7 +208,6 @@ footer {
     width: 100%;
     height: 100%;
 }
-
 .main-bottom-left {
     width: 70%;
     height: 100%;
@@ -237,8 +229,6 @@ footer {
     color: white;
     font-size: 1.8rem;
 }
-
-
 
 /* footer */
 .footer {
@@ -289,14 +279,13 @@ footer {
 }
 .footer-bottom {
     height: 60px;
-    width: 100%;
-    border-top: #fff solid 20px;
-    /* background-color: rgb(30, 60, 43); */
+    /* width: 100%; */
+    border-top: #fff solid 15px;
+    background-color: rgb(30, 60, 43);
 }
 .footer-bottom-left {
     width: 35%;
     height: 100%;
-    background-color: rgb(30, 60, 43);
 }
 /*맨 밑에 Paxtek 로고 둘 자리확보*/
 .footer-bottom-left-logo {
@@ -314,7 +303,6 @@ footer {
     height: 100%;
     text-align: right;
     display: table;
-    background-color: rgb(30, 60, 43);
 }
 .footer-bottom-right-word {
     margin: 0;
@@ -356,48 +344,40 @@ footer {
     }
     .hidden-navbar li {
         height: 100%;
-        padding: 0 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        padding: 0 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         font-size: 20px;
     }
-    
+    .helper {
+        height: 3px;
+    }
     /* MANUFACTURE글자 & 녹색바탕 있는 부분 */
     .main-title {
-        height: 50px;
+        height: 30px;
     }
     .main-title-letter {
-        font-size: 30px;
-    }
-
-    .main1 {
-        height: 600px;
-        height: 100%;
-    }
-    .main2 {
-        height: 450px;
-        height: 100%;
-    }
-    .main1-left, .main1-right, .main2-left, .main2-right {
-        width: 100%;
+        font-size: 22px;
     }
     .frame img {
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
+    }
+    .img-wrapper {
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        width: 250px;
+        height: 300px;
+        padding: 0 10px 30px 10px;
+        display: inline-block;
     }
     .img-wrapper:hover .letter {
         transform: scale(1);
         color: white;
         font-size: 1.6em;
         margin-top: -5px;
-        /* margin-left: 110px; */
         text-align: center;
-    }
-    .helper {
-        display: inline-block;
-        height: 7px;
-        width: 100%;
-        vertical-align: middle;
     }
     .main-bottom {
         height: 100%;
@@ -412,30 +392,19 @@ footer {
         font-size: 1rem;
     }
     .footer-top {
-        height: 300px;
+        height: 500px;
     }
     .footer-top-left, .footer-top-right {
         width: 100%;
-    }
-    .footer-top-left-container {
-        margin: 0;
-    }
-    .footer-top-left-contactus {
-        width: 100%;
-        text-align: center;
+        height: 250px;
     }
     .container-contact-A, .container-contact-B {
         width: 50%;
-        margin-top: 80px;
+        margin-top: 50px;
         float: left;
     }
-    .container-contact-A h3 {
-        display: inline-block;
-        width: 240px;
-        font-size: 2.0rem;
-    }
-    .container-contact-B li a {
-        font-size: 1.7rem;
+    .footer-bottom {
+        border-top: #fff solid 10px;
     }
 }
 
@@ -468,64 +437,40 @@ footer {
         margin-bottom: 10px;
         font-size: 10px;
     }
+    /* MANUFACTURE글자 & 녹색바탕 있는 부분 */
+    .main-title {
+        height: 20px;
+    }
+    .main-title-letter {
+        font-size: 15px;
+        text-indent: 15px;
+    }
     .fa-bars {
         font-size: 2.22222rem;
-    }
-    .main1, .main2 {
-        width: 100%;
-        height: 100%;
-    }
-    .main1-left {
-        padding-top: 20px;
-    }
-    .main1-left img {
-        width: 90%;
-        height: 120%;
     }
     .main-bottom-left, .main-bottom-right {
         height: 200px;
     }
-
-    .helper {
-        display: inline-block;
-        height: 7px;
-        width: 100%;
-        vertical-align: middle;
-    }
     .footer-top {
+        height: 340px;
+    }
+    .footer-top-left, .footer-top-right {
         height: 170px;
     }
-    .footer-top-left-container {
-        margin: 0;
-        margin-top: 0;
-    }
-    .footer-top-left-contactus {
-        width: 100%;
-        text-align: center;
-        margin-top: -60px;
-    }
-    .container-contact-A {
-        font-size: 25px;
-    }
     .main-bottom-right-outside span {
-        font-size: 0.4rem;
-    }
-    .container-contact-A, .container-contact-B {
-        width: 50%;
-        margin-top: 15x;
-        float: left;
+        font-size: 0.5rem;
     }
     /* Want to know ~~ 글자 있는 박스 부분*/
-    .container-contact-A h3 {
-        display: inline-block;
-        font-size: 15px;
-        width: 125px;
+    .container-contact-A, .container-contact-B {
+        margin-top: 16px;
+        font-size: 1.2rem;
     }
     .container-contact-B li a {
         font-size: 1.0rem;
     }
     .footer-bottom {
         height: 40px;
+        border-top: #fff solid 5px;
     }
     .footer-bottom-left-logo {
         margin-left: 5px;
