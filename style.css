@@ -313,8 +313,7 @@ footer {
 .footer-bottom {
     height: 60px;
     width: 100%;
-    border-top: #fff solid 20px;
-    /* background-color: rgb(30, 60, 43); */
+    border-top: #fff solid 10px;
 }
 .footer-bottom-left {
     width: 35%;
@@ -397,34 +396,28 @@ footer {
     .main1-right-word-bottom p {
         line-height: 60px;
     }
-
     .main2-left-word {
         font-size: 50px;
     }
+    
     .footer-top {
-        height: 300px;
+        height: 600px;
     }
-    .footer-top-left, .footer-top-right {
+    .footer-top-left {
         width: 100%;
+        height: 250px;
     }
-    .footer-top-left-container {
-        margin: 0;
-    }
-    .footer-top-left-contactus {
+    .footer-top-right {
         width: 100%;
-        text-align: center;
+        height: 350px;
     }
     .container-contact-A, .container-contact-B {
         width: 50%;
+        margin-top: 50px;
         float: left;
     }
-    .container-contact-A h3 {
-        display: inline-block;
-        width: 240px;
-        font-size: 2.0rem;
-    }
-    .container-contact-B li a {
-        font-size: 1.7rem;
+    .footer-bottom {
+        border-top: #fff solid 10px;
     }
 }
 
@@ -496,42 +489,34 @@ footer {
         height: 80%;
     }
     .footer-top {
+        height: 420px;
+    }
+    .footer-top-left {
         height: 170px;
     }
-    .footer-top-left-contactus {
-        width: 100%;
-        text-align: center;
+    .footer-top-right {
+        height: 250px;
     }
+    .main-bottom-right-outside span {
+        font-size: 0.5rem;
+    }
+    /* Want to know ~~ 글자 있는 박스 부분*/
     .container-contact-A, .container-contact-B {
-        display: table;
+        margin-top: 16px;
+        font-size: 1.2rem;
     }
-    .container-contact-A {
-        width: 40%;
-        display: table-cell;
-        vertical-align: middle;
-        vertical-align: middle;
-        display: table-cell;
-        line-height: 200%;
-        font-size: 15px;
-    }
-    .container-contact-B {
-        width: 60%;
-    }
-
     .container-contact-B li a {
         font-size: 1.0rem;
     }
     .footer-bottom {
         height: 40px;
+        border-top: #fff solid 5px;
     }
     .footer-bottom-left-logo {
         margin-left: 5px;
         margin-top: 5px;
         width: 100px;
         height: 30px;
-    }
-    .footer-bottom-right-word li {
-        font-size: 10px;
     }
 }
 

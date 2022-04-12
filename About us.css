@@ -150,77 +150,86 @@ footer {
     font-size: 25px;
     text-indent: 23px;
 }
-/* 사진들 있는 부분 */
 .main {
-    /* 사진 가운데 정렬 */
-    text-align: center;
-}
-.frame {
-    padding: 40px 12%;
-}
-.img-wrapper {
-    margin: 30px;
-    font-size: 20px;
-    cursor: pointer;
-    width: 300px;
-    height: 400px;
-    display: inline-block;
-    /* padding: 0 10px 10px 10px; */
-    position: relative;
-    overflow: hidden;
-}
-/* img-wrapper로 사진 크기를 정하고(300,400), img의 실제 크기는 여기에 상속 */
-.img-wrapper img {
-    width: inherit;
-    height: inherit;
-    transition: all 0.5s linear;
-}
-.letter {
-    position: absolute;
-    font-size:1.5em;
-    color:#fff;
-    font-weight: 400;
-    text-transform: capitalize;
-    left: 15px;
-    bottom: 3px;
-}
-.img-wrapper:hover img {
-    transform: scale(1.2);
-}
-/* .img-wrapper:hover .letter {
-    transform: scale(1.1);
-} */
-
-/* 공장 전체 사진 있는 부분 */
-.main-bottom {
-    display: inline-block;
-    width: 100%;
-    height: 550px;
-}
-.main-bottom img {
-    width: 100%;
-    height: 100%;
-}
-.main-bottom-left {
-    width: 70%;
-    height: 100%;
-    height: inherit;
+    font-size: 1rem;
     float: left;
 }
-.main-bottom-right {
-    width: 30%;
-    height: 100%;
+.main1 {
+    height: 420px;
+    margin-top: 20px;
+    margin: 0 100px;
+    /* text-align: center; */
+}
+.main1-left {
+    width: 45%;
     height: inherit;
-    display: inline-block;
-    vertical-align: middle;
-    background-color: rgb(30, 60, 43);
+    text-align: center;
 }
-.main-bottom-right-outside {
-    margin: 30px;
+.main1-left-word {
+    font-weight: bold;
+    color: rgb(30, 60, 43);
+    /* margin-left: 10%; */
+    margin-right: -100px;
 }
-.main-bottom-right-outside span {
-    color: white;
-    font-size: 1.8rem;
+.main1-left-word h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+.main1-left-word p {
+    font-size: 30px;
+    opacity: 0.75;
+    /* text-indent: 120px; */
+    /* text-align: left; */
+}
+.main1-right {
+    width: 55%;
+    height: inherit;
+    text-align: left;
+}
+.main1-right h1 {
+    color: rgb(30, 60, 43);
+    font-size: 45px;
+    text-indent: 70px;
+}
+.main1-right img {
+    /* width: 88%; */
+    width: 500px;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+/* main2 */
+.main2 {
+    height: 580px;
+    margin: 0 100px;
+    text-align: center;
+}
+.main2-left {
+    width: 40%;
+    height: inherit;
+}
+.main2-left img {
+    width: 500px;
+    height: 557px;
+    margin-left: -50px;
+}
+.main2-right {
+    width: 60%;
+    height: inherit;
+    text-indent: 120px;
+    text-align: left;
+}
+.main2-right h1 {
+    color: rgb(30, 60, 43);
+    font-size: 45px;
+    margin-top: 50px;
+}
+.main2-right img {
+    /* width: 88%; */
+    width: 500px;
+    height: 390px;
+    margin-left: 70px;
+    margin-top: 20px;
 }
 
 /* footer */
@@ -356,27 +365,69 @@ footer {
     .main-title-letter {
         font-size: 22px;
     }
-    .frame {
-        margin: -30px 0;
+    
+    .main1 {
+        height: 700px;
+        margin-top: 10px;
     }
-    .img-wrapper {
-        font-size: 18px;
-        width: 250px;
-        height: 350px;
-        margin: 10px 10px;
+    .main1-left {
+        width: 100%;
+        height: 50%;
+        text-indent: -90px;
     }
-    .main-bottom {
-        height: 100%;
+    .main1-left-word h1 {
+        font-size: 40px;
     }
-    .main-bottom-left, .main-bottom-right {
+    .main1-left-word p {
+        font-size: 25px;
+    }
+    .main1-right {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .main1-right h1 {
+        font-size: 40px;
+        text-indent: 0px;;
+    }
+    .main1-right img {
+        /* width: 88%; */
+        width: 430px;
+        height: 210px;
+        margin-left: -10px;
+    }
+    /* main2 */
+    .main2 {
+        height: 900px;
+        text-align: center;
+    }
+    .main2-left {
+        width: 100%;
+        height: 50%;
+    }
+    .main2-left img {
+        width: 300px;
+        height: 400px;
+    }
+    .main2-right {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .main2-right h1 {
+        color: rgb(30, 60, 43);
+        font-size: 40px;
+        margin-top: 0px;
+        margin-left: -120px;
+    }
+    .main2-right img {
+        /* width: 88%; */
+        width: 400px;
         height: 300px;
+        margin-left: -10px;
+        margin-top: 20px;
     }
-    .main-bottom-right-outside {
-        height: 100%;
-    }
-    .main-bottom-right-outside span {
-        font-size: 1rem;
-    }
+
     .footer-top {
         height: 500px;
     }
@@ -435,17 +486,45 @@ footer {
         font-size: 2.22222rem;
         margin-top: 2px;
     }
-    .main-bottom-left, .main-bottom-right {
-        height: 200px;
+
+    .main1 {
+        height: 550px;
+        margin-top: 10px;
     }
+    .main1-left-word h1 {
+        font-size: 33px;
+    }
+    .main1-left-word p {
+        font-size: 20px;
+    }
+    .main1-right h1 {
+        font-size: 33px;
+    }
+    .main1-right img {
+        width: 330px;
+        height: 160px;
+    }
+    /* main2 */
+    .main2 {
+        height: 700px;
+    }
+    .main2-left img {
+        width: 250px;
+        height: 330px;
+    }
+    .main2-right h1 {
+        font-size: 33px;
+    }
+    .main2-right img {
+        width: 330px;
+        height: 240px;
+    }
+
     .footer-top {
         height: 340px;
     }
     .footer-top-left, .footer-top-right {
         height: 170px;
-    }
-    .main-bottom-right-outside span {
-        font-size: 0.5rem;
     }
     /* Want to know ~~ 글자 있는 박스 부분*/
     .container-contact-A, .container-contact-B {
@@ -466,4 +545,5 @@ footer {
         height: 30px;
     }
 }
+
 
