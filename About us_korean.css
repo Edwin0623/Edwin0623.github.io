@@ -494,29 +494,33 @@ footer {
         font-size: 30px;
     }
     .main1-left-word p {
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 20px;
     }
     .main1-right h1 {
         font-size: 30px;
     }
     .main1-right img {
-        width: 320px;
-        height: 140px;
+        width: 250px;
+        height: 130px;
+        margin-left: -34px;
     }
     /* main2 */
     .main2 {
-        height: 700px;
+        height: 620px;
     }
     .main2-left img {
-        width: 250px;
-        height: 330px;
+        width: 200px;
+        height: 300px;
+        margin-left: -40px;
     }
     .main2-right h1 {
-        font-size: 33px;
+        font-size: 28px;
     }
     .main2-right img {
-        width: 330px;
-        height: 160px;
+        width: 230px;
+        height: 200px;
+        margin-left: -20px;
     }
 
     .footer-top {
