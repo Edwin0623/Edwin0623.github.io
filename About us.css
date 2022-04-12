@@ -507,7 +507,7 @@ footer {
     }
     /* main2 */
     .main2 {
-        height: 670px;
+        height: 690px;
     }
     .main2-left img {
         width: 200px;
@@ -515,7 +515,8 @@ footer {
         margin-left: -40px;
     }
     .main2-right h1 {
-        font-size: 25px;
+        font-size: 23px;
+        margin-top: -20px;
     }
     .main2-right img {
         width: 230px;
